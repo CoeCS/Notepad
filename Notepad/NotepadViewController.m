@@ -62,7 +62,7 @@
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:@"data.plist"];
     
-    //[[NSDictionary dictionaryWithObjectsAndKeys:self.texterViewer.text, @"text", nil] writeToFile:plistPath atomically:YES];
+    [[NSDictionary dictionaryWithObjectsAndKeys:self.texterViewer.text, @"text", nil] writeToFile:plistPath atomically:YES];
 }
 
 @end
